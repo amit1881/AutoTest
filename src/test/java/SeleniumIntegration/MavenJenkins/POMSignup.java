@@ -33,7 +33,7 @@ public class POMSignup {
 	private static WebDriver driver = null;
 	public static void main(String[] args) throws IOException, AWTException {
 		
-		File file = new File("D:\\screenshots");  
+		File file = new File("/var/www/html/TestVideos");  
 		Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
         int width = screenSize.width;
         int height = screenSize.height;
@@ -111,7 +111,7 @@ public class POMSignup {
 	      
 	      //Save screenshot
 	      File screenshot = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-	      FileUtils.copyFile(screenshot, new File("D:\\screenshots\\screenshots1.jpg"));
+	      FileUtils.copyFile(screenshot, new File("/var/www/html/TestVideos/screenshots1.jpg"));
 	      
 	      //Save video
 	      //File sr=(File) OutputType.FILE;
