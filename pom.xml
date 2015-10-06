@@ -27,11 +27,11 @@
         <version>2.45.0</version>
     </dependency>  
     <dependency>
-        <groupId>org.monte</groupId>
-        <artifactId>monte-screen-recorder</artifactId>
-        <version>0.7.5</version>
-        <scope>test</scope>
+	       <groupId>com.pojosontheweb</groupId>
+	       <artifactId>monte-repack</artifactId>
+	       <version>1.0</version>
 </dependency>
+
     
     
   </dependencies>
