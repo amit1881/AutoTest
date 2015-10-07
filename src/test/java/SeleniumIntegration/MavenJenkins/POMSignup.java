@@ -32,6 +32,7 @@ public class POMSignup {
 	private static ScreenRecorder screenRecorder;
 	private static WebDriver driver = null;
 	public static void main(String[] args) throws IOException, AWTException {
+		System.out.println("Jenkins with saucelabs");
 		
 		File file = new File("/var/www/html/TestVideos");  
 		Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
