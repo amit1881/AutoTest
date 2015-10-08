@@ -30,7 +30,7 @@ import static org.monte.media.VideoFormatKeys.*;
 public class POMSignup {
 	
 	private static ScreenRecorder screenRecorder;
-	private static WebDriver driver = null;
+	//private static WebDriver driver = null;
 	public static void main(String[] args) throws IOException, AWTException {
 		System.out.println("Jenkins with saucelabs");
 		
@@ -78,6 +78,16 @@ public class POMSignup {
 	               new Format(MediaTypeKey, MediaType.VIDEO, EncodingKey, "black",
 	                    FrameRateKey, Rational.valueOf(30)),
 	               null, file, "MyVideo");
+	               
+	                       DesiredCapabilities caps = DesiredCapabilities.firefox();
+        caps.setCapability("platform", "Linux");
+        caps.setCapability("version", "41");
+        caps.setCapability("name", "Web Driver demo Test");
+        caps.setCapability("tags", "Tag1");
+        caps.setCapability("build", "v1.0");
+        WebDriver driver = new RemoteWebDriver(
+                new URL("http://amit1881:c33b1e5d-0656-41e9-87f0-5c16dc26e576@ondemand.saucelabs.com:80/wd/hub"),
+                caps);
 		
 	      driver = new FirefoxDriver();
 	      
