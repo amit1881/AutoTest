@@ -23,7 +23,8 @@ import org.monte.screenrecorder.ScreenRecorder;
 import static org.monte.media.AudioFormatKeys.*;
 import static org.monte.media.VideoFormatKeys.*;
 
-
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
 //Non-TestNG Project
 
